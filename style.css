@@ -1,0 +1,287 @@
+*{
+  margin: 0px;
+  padding: 0px;
+  text-transform: capitalize;
+  box-sizing: border-box;
+}
+
+/* Header starts */
+
+header{
+  display: flex;
+  margin-top: 5px;
+  justify-content: space-around;
+}
+
+.search i{
+  font-size: 22px;
+  margin-top: 10px;
+}
+
+input[type="search"] {
+  padding: 10px;
+  padding-right: 100px;
+  border-radius: 10px;
+}
+
+.dropbtn {
+    background-color: #04AA6D;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+  }
+  
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .dropdown-content a:hover {background-color: #ddd;}
+  
+  .dropdown:hover .dropdown-content {display: block;}
+  
+  .dropdown:hover .dropbtn {background-color: #3e8e41;}
+
+.contact{
+  display: flex;
+}
+.emergency{
+  background-color: limegreen;
+  color: white;
+  padding: 10px;
+  text-decoration: none;
+  text-align: center;
+}
+.emergency-2{
+  background-color: darkcyan;
+  color: white;
+  padding: 10px;
+  text-decoration: none;
+  text-align: center;
+}
+
+/* Header ends */
+
+.slide{
+  min-height: 550px;
+}
+
+.carousel-cell{
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.navbar{
+  display: flex;
+  justify-content: space-evenly;
+  background-color: #333;
+  padding: 20px;
+}
+.navbar a{
+  text-decoration: none;
+  color: white;
+  font-family: Georgia;
+  font-weight: bolder;
+  font-size: 18px;
+}
+.navbar p{
+  color: white;
+}
+.navbar .red{
+  color: red;
+}
+
+.list-categories{
+  list-style-type: none;
+  padding: 0px;
+  font-size: 10px;
+  text-align: center;
+  color: brown;
+  font-family: Verdana;
+  font-weight: bolder;
+  margin: 0px;
+  max-height: 0px;
+  opacity: 0;
+  overflow: hidden;
+  transition: opacity 300ms ease; 
+}
+
+.landing{
+  background: url(./bg1.jpg) center center/cover ;
+  height: fit-content;
+  min-height: 100%;
+  min-height: 100vh;
+}
+
+.landing h1{
+  color: white;
+  text-align: center;
+  padding-top: 10px;
+  font-size: 60px;
+  font-family: 'Franklin Gothic Medium';
+}
+
+.landing h1 span{
+  color: yellow;
+}
+
+.landing h2{
+  color: white;
+  padding-top: 70px;
+  padding-left: 50px;
+  font-size: 49px;
+  padding-top: 222px;
+  font-family: 'Franklin Gothic Medium';
+}
+
+.landing h2 span{
+  color: black;
+  font-size: 55px;
+}
+
+.landing p{
+  float: left;
+  width: 800px;
+  padding-left: 50px;
+  font-size: 25px;
+}
+
+
+
+/* Float four columns side by side */
+.column {
+  float: right;
+  width: 25%;
+  padding:0 5px;
+  padding-top: 30px;
+  padding-bottom: 50px;
+}
+
+.rows {
+  margin: 0 5px;
+}
+
+/* Style the counter cards */
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  padding: 36px;
+  text-align: center;
+  background-color: darkslategrey;
+  color: white;
+  font-size: 18px;
+}
+.card:hover{
+  background-color: lightgrey;
+  color: green;
+}
+
+.fa {font-size:60px;}
+
+.services h1{
+  font-size: 36px;
+  text-align: center;
+  color: darkslategray;
+  margin-top: 20px;
+  text-decoration: underline;
+}
+
+.services h1 span{
+  color: darkgreen;
+}
+
+.contact .row{
+  display: flex;
+  flex-wrap: wrap-reverse;
+  gap:1.5rem;
+  align-items: center;
+}
+
+.contact h1{
+  color: #333;
+  margin-top: 20px;
+}
+.contact{
+  font-size: 25px;
+  text-align: center;
+}
+
+.contact h1 span{
+  color: #3e8e41;
+}
+
+.contact .row form{
+  flex:1 1 40rem;
+  padding:2rem 2.5rem;
+  box-shadow: 0 .5rem 1.5rem rgba(0,0,0,.1);
+  border:.1rem solid rgba(0,0,0,.1);
+  background: #fff;
+  border-radius: .5rem;
+}
+
+.contact .row .image{
+  flex:1 1 40rem;
+}
+
+.contact .row .image img{
+  width: 100%;
+}
+
+.contact .row form .box{
+  padding:1rem;
+  font-size: 1.7rem;
+  color:#333;
+  text-transform: none;
+  border:.1rem solid rgba(0,0,0,.1);
+  border-radius: .5rem;
+  margin:.7rem 0;
+  width: 100%;
+}
+
+input[type="submit"] {
+  text-transform: capitalize;
+  padding: 12px;
+  border-radius: 10px;
+  background-color: slategray;
+  width: 200px;
+  cursor: pointer;
+  font-size: 20px;
+  color: lightgreen;
+}
+input[type="submit"]:hover{
+  background-color: #04AA6D;
+  color: white;
+  transition: 0.5s;
+}
+
+
+footer {
+  background-color: #333;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+}
+
+footer a {
+  text-decoration: none;
+  padding: 30px;
+  float: left;
+  font-size: 18px;
+  color: white;
+}
